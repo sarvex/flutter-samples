@@ -31,8 +31,7 @@ class DraggableCard extends StatefulWidget {
   _DraggableCardState createState() => _DraggableCardState();
 }
 
-class _DraggableCardState extends State<DraggableCard>
-    with SingleTickerProviderStateMixin {
+class _DraggableCardState extends State<DraggableCard> with SingleTickerProviderStateMixin {
   AnimationController _controller;
 
   /// The alignment of the card as it is dragged or being animated.

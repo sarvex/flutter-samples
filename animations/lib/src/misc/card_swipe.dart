@@ -107,8 +107,7 @@ class SwipeableCard extends StatefulWidget {
   _SwipeableCardState createState() => _SwipeableCardState();
 }
 
-class _SwipeableCardState extends State<SwipeableCard>
-    with SingleTickerProviderStateMixin {
+class _SwipeableCardState extends State<SwipeableCard> with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation<Offset> _animation;
   double _dragStartX;
@@ -152,16 +151,14 @@ class _SwipeableCardState extends State<SwipeableCard>
     setState(() {
       // Calculate the amount dragged in unit coordinates (between 0 and 1)
       // using this widgets width.
-      _controller.value =
-          (details.localPosition.dx - _dragStartX).abs() / context.size.width;
+      _controller.value = (details.localPosition.dx - _dragStartX).abs() / context.size.width;
     });
   }
 
   /// Runs the fling / spring animation using the final velocity of the drag
   /// gesture.
   void _dragEnd(DragEndDetails details) {
-    var velocity =
-        (details.velocity.pixelsPerSecond.dx / context.size.width).abs();
+    var velocity = (details.velocity.pixelsPerSecond.dx / context.size.width).abs();
     _animate(velocity: velocity);
   }
 
@@ -174,8 +171,7 @@ class _SwipeableCardState extends State<SwipeableCard>
 
   void _animate({double velocity = 0}) {
     var description = SpringDescription(mass: 50, stiffness: 1, damping: 1);
-    var simulation =
-        SpringSimulation(description, _controller.value, 1, velocity);
+    var simulation = SpringSimulation(description, _controller.value, 1, velocity);
     _controller.animateWith(simulation).then((_) {
       widget.onSwiped();
     });

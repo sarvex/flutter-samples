@@ -22,8 +22,7 @@ class ExpandCard extends StatefulWidget {
   _ExpandCardState createState() => _ExpandCardState();
 }
 
-class _ExpandCardState extends State<ExpandCard>
-    with SingleTickerProviderStateMixin {
+class _ExpandCardState extends State<ExpandCard> with SingleTickerProviderStateMixin {
   static const Duration duration = Duration(milliseconds: 300);
   bool selected = false;
 
@@ -51,14 +50,11 @@ class _ExpandCardState extends State<ExpandCard>
               duration: duration,
               firstCurve: Curves.easeInOutCubic,
               secondCurve: Curves.easeInOutCubic,
-              crossFadeState: selected
-                  ? CrossFadeState.showSecond
-                  : CrossFadeState.showFirst,
+              crossFadeState: selected ? CrossFadeState.showSecond : CrossFadeState.showFirst,
               // Use Positioned.fill() to pass the constraints to its children.
               // This allows the Images to use BoxFit.cover to cover the correct
               // size
-              layoutBuilder:
-                  (topChild, topChildKey, bottomChild, bottomChildKey) {
+              layoutBuilder: (topChild, topChildKey, bottomChild, bottomChildKey) {
                 return Stack(
                   children: [
                     Positioned.fill(

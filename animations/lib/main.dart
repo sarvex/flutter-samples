@@ -29,38 +29,27 @@ class Demo {
 }
 
 final basicDemos = [
-  Demo('AnimatedContainer', AnimatedContainerDemo.routeName,
-      (context) => AnimatedContainerDemo()),
-  Demo('PageRouteBuilder', PageRouteBuilderDemo.routeName,
-      (context) => PageRouteBuilderDemo()),
-  Demo('Animation Controller', AnimationControllerDemo.routeName,
-      (context) => AnimationControllerDemo()),
+  Demo('AnimatedContainer', AnimatedContainerDemo.routeName, (context) => AnimatedContainerDemo()),
+  Demo('PageRouteBuilder', PageRouteBuilderDemo.routeName, (context) => PageRouteBuilderDemo()),
+  Demo('Animation Controller', AnimationControllerDemo.routeName, (context) => AnimationControllerDemo()),
   Demo('Tweens', TweenDemo.routeName, (context) => TweenDemo()),
-  Demo('AnimatedBuilder', AnimatedBuilderDemo.routeName,
-      (context) => AnimatedBuilderDemo()),
-  Demo('Custom Tween', CustomTweenDemo.routeName,
-      (context) => CustomTweenDemo()),
-  Demo('Tween Sequences', TweenSequenceDemo.routeName,
-      (context) => TweenSequenceDemo()),
+  Demo('AnimatedBuilder', AnimatedBuilderDemo.routeName, (context) => AnimatedBuilderDemo()),
+  Demo('Custom Tween', CustomTweenDemo.routeName, (context) => CustomTweenDemo()),
+  Demo('Tween Sequences', TweenSequenceDemo.routeName, (context) => TweenSequenceDemo()),
 ];
 
 final miscDemos = [
-  Demo('Expandable Card', ExpandCardDemo.routeName,
-      (context) => ExpandCardDemo()),
+  Demo('Expandable Card', ExpandCardDemo.routeName, (context) => ExpandCardDemo()),
   Demo('Carousel', CarouselDemo.routeName, (context) => CarouselDemo()),
   Demo('Focus Image', FocusImageDemo.routeName, (context) => FocusImageDemo()),
   Demo('Card Swipe', CardSwipeDemo.routeName, (context) => CardSwipeDemo()),
-  Demo('Repeating Animation', RepeatingAnimationDemo.routeName,
-      (context) => RepeatingAnimationDemo()),
-  Demo('Spring Physics', PhysicsCardDragDemo.routeName,
-      (context) => PhysicsCardDragDemo()),
+  Demo('Repeating Animation', RepeatingAnimationDemo.routeName, (context) => RepeatingAnimationDemo()),
+  Demo('Spring Physics', PhysicsCardDragDemo.routeName, (context) => PhysicsCardDragDemo()),
 ];
 
-final basicDemoRoutes =
-    Map.fromEntries(basicDemos.map((d) => MapEntry(d.route, d.builder)));
+final basicDemoRoutes = Map.fromEntries(basicDemos.map((d) => MapEntry(d.route, d.builder)));
 
-final miscDemoRoutes =
-    Map.fromEntries(miscDemos.map((d) => MapEntry(d.route, d.builder)));
+final miscDemoRoutes = Map.fromEntries(miscDemos.map((d) => MapEntry(d.route, d.builder)));
 
 final allRoutes = <String, WidgetBuilder>{
   ...basicDemoRoutes,

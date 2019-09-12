@@ -11,8 +11,7 @@ class TweenSequenceDemo extends StatefulWidget {
   _TweenSequenceDemoState createState() => _TweenSequenceDemoState();
 }
 
-class _TweenSequenceDemoState extends State<TweenSequenceDemo>
-    with SingleTickerProviderStateMixin {
+class _TweenSequenceDemoState extends State<TweenSequenceDemo> with SingleTickerProviderStateMixin {
   static const Duration duration = Duration(seconds: 3);
   AnimationController controller;
   Animation<Color> animation;

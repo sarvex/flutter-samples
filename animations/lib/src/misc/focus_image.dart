@@ -20,12 +20,9 @@ class Grid extends StatelessWidget {
     return Scaffold(
       body: GridView.builder(
         itemCount: 40,
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
         itemBuilder: (context, index) {
-          return (index >= 20)
-              ? SmallCard('assets/eat_cape_town_sm.jpg')
-              : SmallCard('assets/eat_new_orleans_sm.jpg');
+          return (index >= 20) ? SmallCard('assets/eat_cape_town_sm.jpg') : SmallCard('assets/eat_new_orleans_sm.jpg');
         },
       ),
     );
@@ -38,9 +35,7 @@ Route _createRoute(BuildContext parentContext, String image) {
       return _SecondPage(image);
     },
     transitionsBuilder: (context, animation, secondaryAnimation, child) {
-      var rectAnimation = _createTween(parentContext)
-          .chain(CurveTween(curve: Curves.ease))
-          .animate(animation);
+      var rectAnimation = _createTween(parentContext).chain(CurveTween(curve: Curves.ease)).animate(animation);
 
       return Stack(
         children: [

@@ -5,8 +5,7 @@
 import 'package:flutter/material.dart';
 
 class TypewriterTween extends Tween<String> {
-  TypewriterTween({String begin = '', String end})
-      : super(begin: begin, end: end);
+  TypewriterTween({String begin = '', String end}) : super(begin: begin, end: end);
 
   String lerp(double t) {
     var cutoff = (end.length * t).round();
@@ -20,8 +19,7 @@ class CustomTweenDemo extends StatefulWidget {
   _CustomTweenDemoState createState() => _CustomTweenDemoState();
 }
 
-class _CustomTweenDemoState extends State<CustomTweenDemo>
-    with SingleTickerProviderStateMixin {
+class _CustomTweenDemoState extends State<CustomTweenDemo> with SingleTickerProviderStateMixin {
   static const Duration _duration = Duration(seconds: 3);
   static const String message = loremIpsum;
   AnimationController controller;
@@ -45,9 +43,7 @@ class _CustomTweenDemoState extends State<CustomTweenDemo>
         actions: [
           MaterialButton(
             child: Text(
-              controller.status == AnimationStatus.completed
-                  ? 'Delete Essay'
-                  : 'Write Essay',
+              controller.status == AnimationStatus.completed ? 'Delete Essay' : 'Write Essay',
             ),
             textColor: Colors.white,
             onPressed: () {
@@ -73,9 +69,7 @@ class _CustomTweenDemoState extends State<CustomTweenDemo>
                   child: AnimatedBuilder(
                     animation: animation,
                     builder: (context, child) {
-                      return Text('${animation.value}',
-                          style: TextStyle(
-                              fontSize: 16, fontFamily: 'SpecialElite'));
+                      return Text('${animation.value}', style: TextStyle(fontSize: 16, fontFamily: 'SpecialElite'));
                     },
                   ),
                 ),

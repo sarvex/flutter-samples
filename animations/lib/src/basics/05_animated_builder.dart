@@ -10,8 +10,7 @@ class AnimatedBuilderDemo extends StatefulWidget {
   _AnimatedBuilderDemoState createState() => _AnimatedBuilderDemoState();
 }
 
-class _AnimatedBuilderDemoState extends State<AnimatedBuilderDemo>
-    with SingleTickerProviderStateMixin {
+class _AnimatedBuilderDemoState extends State<AnimatedBuilderDemo> with SingleTickerProviderStateMixin {
   static const Color beginColor = Colors.deepPurple;
   static const Color endColor = Colors.deepOrange;
   Duration duration = Duration(milliseconds: 800);
@@ -22,8 +21,7 @@ class _AnimatedBuilderDemoState extends State<AnimatedBuilderDemo>
     super.initState();
 
     controller = AnimationController(vsync: this, duration: duration);
-    animation =
-        ColorTween(begin: beginColor, end: endColor).animate(controller);
+    animation = ColorTween(begin: beginColor, end: endColor).animate(controller);
   }
 
   void dispose() {
