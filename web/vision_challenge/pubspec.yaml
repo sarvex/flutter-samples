@@ -8,7 +8,7 @@ dependencies:
   flutter:
     sdk: flutter
   redux: ^3.0.0
-  flutter_redux: ^0.5.3
+  flutter_redux: ^0.10.0
 
 flutter:
   uses-material-design: true
