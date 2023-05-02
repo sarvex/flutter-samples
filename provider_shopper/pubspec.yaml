@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   # Import the provider package.
-  provider: ^3.0.0
+  provider: ^6.0.0
 
 dev_dependencies:
   flutter_test:
