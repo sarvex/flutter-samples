@@ -74,10 +74,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_lorem
-      sha256: "0de3b7394786b0beeca32eda4b216e230ea4859888594d3e5c6b5bb44cda9f4e"
+      sha256: "004e1af5b030b632628d8cc1eb2f90451f48b6c0080f43069f69baa4959e9fe5"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "2.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
