@@ -10,7 +10,7 @@ dependencies:
   collection: 1.17.1
   device_info: 0.4.2+10
   intl: 0.18.1
-  connectivity: 0.4.9+5
+  connectivity: 3.0.6
   string_scanner: 1.2.0
   url_launcher: 5.7.10
   cupertino_icons: 0.1.3
