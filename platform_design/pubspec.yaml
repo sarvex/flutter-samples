@@ -7,7 +7,7 @@ environment:
   flutter: ">=1.5.2"
 
 dependencies:
-  english_words: ^3.1.5
+  english_words: ^4.0.0
   flutter_lorem: ^2.0.0
   flutter:
     sdk: flutter
