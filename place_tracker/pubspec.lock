@@ -25,14 +25,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.1"
-  charcode:
-    dependency: transitive
-    description:
-      name: charcode
-      sha256: "3b2184de710a811255c3243d36dd0da64d86ae7b53ab026973ccd573a1a4b987"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.2"
   clock:
     dependency: transitive
     description:
@@ -49,22 +41,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
-  convert:
-    dependency: transitive
-    description:
-      name: convert
-      sha256: "3fa83bc417e26f1d55814443a603747d48e3cdf55b2f4fea27dea8e9224dcefd"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.1.1"
   crypto:
     dependency: transitive
     description:
       name: crypto
-      sha256: "65d1f5d5b787866aebd31b4d11ed50ea48d930238573ee49fd53c9c4abc75918"
+      sha256: aa274aa7774f8964e4f4f38cc994db7b6158dd36e9187aaceaddc994b35c6c67
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.6"
+    version: "3.0.2"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -252,18 +236,18 @@ packages:
     dependency: transitive
     description:
       name: typed_data
-      sha256: c658af5f6dca146cfeb54a0908dbf8cbdcbef9e7e375541539b38be1694fe2bf
+      sha256: "26f87ade979c47a150c9eaab93ccd2bebe70a27dc0b4b29517f2904f04eb11a5"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.6"
+    version: "1.3.1"
   uuid:
     dependency: "direct main"
     description:
       name: uuid
-      sha256: "1b9363b641e6f73cafd6b37159db5b86b7782fa3595a49c7d1763ce48b11d1e2"
+      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.3"
+    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:
