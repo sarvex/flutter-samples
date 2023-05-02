@@ -16,7 +16,7 @@ dependencies:
   cupertino_icons: 1.0.5
   video_player: 0.11.1+5
   scoped_model: 2.0.0
-  shrine_images: 1.1.2
+  shrine_images: 2.0.2
 
   # Also update dev/benchmarks/complex_layout/pubspec.yaml
   flutter_gallery_assets: 1.0.2
