@@ -12,7 +12,7 @@ dependencies:
   intl: 0.18.1
   connectivity: 3.0.6
   string_scanner: 1.2.0
-  url_launcher: 6.1.14
+  url_launcher: 6.2.1
   cupertino_icons: 1.0.6
   video_player: 2.7.2
   scoped_model: 2.0.0
